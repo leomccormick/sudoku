@@ -86,12 +86,11 @@ def print_time(tempo_fim, tempo_inicio) -> None:
     else:
         print(f"Tempo decorrido: {tempo_total:.4f} s")
 
-# Exemplo de uso
 while True:
     size = input("Digite o tamanho do Sudoku (como 9 para 9x9): ")
     if not size.isdigit():
         break
-    if int(size) not in [1, 4, 9, 16, 25]:
+    if int(size) not in [1, 4, 9, 16, 25, 36]:
         print("Por favor, digite um tamanho válido (como 9 para 9x9 ou 16 para 16x16).")
         continue
 
